@@ -34,6 +34,23 @@
   transition: all 0.3s ease;
 }
 
+.app-header nav button {
+  color: white;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.app-header nav button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
 .app-header nav a:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
@@ -54,6 +71,48 @@
   max-width: 600px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   color: #333;
+}
+
+.contact-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  width: min(100%, 600px);
+  color: #333;
+}
+
+.contact-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button,
+.modal-content button {
+  padding: 0.75rem 1rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .coming-soon h2 {
